@@ -21,6 +21,9 @@ module.exports = {
       exposes: {
         './CartShow': './src/index',
       },
+      shared: {
+    redux: { singleton: true, requiredVersion: false }
+  },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
